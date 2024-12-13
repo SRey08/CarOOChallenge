@@ -10,7 +10,7 @@ class Vehicle {
     }
 
     toString(){
-        return `The vehicle is a ${this.make} ${this.model} from ${this.year}`;
+        return `The vehicle is a ${this.make} ${this.model} from ${this.year}.`;
     }
 }
 
@@ -27,3 +27,18 @@ class Car extends Vehicle{
 }
 
 let myFirstCar = new Car("Toyota", "Corolla", 2005);
+
+class Motorcycle extends Vehicle {
+    constructor (make, model, year){
+        super(make, model, year);
+        this.numWheels = 2 ;
+    
+    }
+
+    revEngine (){
+        return "VROOM!!"
+    }
+
+}
+
+let myFirstMotorcycle = new Motorcycle("Honda", "Nighthawk", 2000);
