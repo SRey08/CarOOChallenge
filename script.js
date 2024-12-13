@@ -8,6 +8,10 @@ class Vehicle {
     honk(){
         return "Beep.";
     }
+
+    toString(){
+        return `The vehicle is a ${this.make} ${this.model} from ${this.year}`;
+    }
 }
 
 let myFirstVehicle = new Vehicle("Honda", "Monster Truck", 1999);
